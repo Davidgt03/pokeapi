@@ -1,0 +1,45 @@
+.modal {
+  display: none; /* Escondido por defecto */
+  position: fixed; /* Fijo en su lugar */
+  z-index: 1; /* Situado encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho total */
+  height: 100%; /* Alto total */
+  overflow: auto; /* Habilitar scroll si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo negro con opacidad */
+}
+
+/* Contenido del modal */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  position: absolute; /* Cambiado a posición absoluta */
+  left: 50%; /* Centrado horizontalmente */
+  top: 50%; /* Centrado verticalmente */
+  transform: translate(-50%, -50%); /* Centrado exacto */
+  margin: 0 auto; /* Eliminado el margen superior e inferior */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Podrías ajustar este valor */
+  max-height: 90vh; /* Altura máxima del modal */
+  overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+}
+
+/* El botón de cierre */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
